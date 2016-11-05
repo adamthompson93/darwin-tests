@@ -1,0 +1,84 @@
+==30== Memcheck, a memory error detector
+==30== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==30== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==30== Command: ./TestDarwin
+==30== 
+Running main() from gtest_main.cc
+[==========] Running 20 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 5 tests from DarwinFixture
+[ RUN      ] DarwinFixture.d_test_1
+[       OK ] DarwinFixture.d_test_1 (46 ms)
+[ RUN      ] DarwinFixture.d_test_2
+[       OK ] DarwinFixture.d_test_2 (2 ms)
+[ RUN      ] DarwinFixture.d_test_3
+[       OK ] DarwinFixture.d_test_3 (3 ms)
+[ RUN      ] DarwinFixture.d_test_4
+[       OK ] DarwinFixture.d_test_4 (69 ms)
+[ RUN      ] DarwinFixture.d_test_5
+[       OK ] DarwinFixture.d_test_5 (32 ms)
+[----------] 5 tests from DarwinFixture (164 ms total)
+
+[----------] 7 tests from SpeciesFixture
+[ RUN      ] SpeciesFixture.s_test_1
+[       OK ] SpeciesFixture.s_test_1 (7 ms)
+[ RUN      ] SpeciesFixture.s_test_2
+[       OK ] SpeciesFixture.s_test_2 (22 ms)
+[ RUN      ] SpeciesFixture.s_test_3
+[       OK ] SpeciesFixture.s_test_3 (4 ms)
+[ RUN      ] SpeciesFixture.s_test_4
+[       OK ] SpeciesFixture.s_test_4 (8 ms)
+[ RUN      ] SpeciesFixture.s_test_5
+[       OK ] SpeciesFixture.s_test_5 (3 ms)
+[ RUN      ] SpeciesFixture.s_test_6
+[       OK ] SpeciesFixture.s_test_6 (3 ms)
+[ RUN      ] SpeciesFixture.s_test_7
+[       OK ] SpeciesFixture.s_test_7 (3 ms)
+[----------] 7 tests from SpeciesFixture (50 ms total)
+
+[----------] 4 tests from InstructionFixture
+[ RUN      ] InstructionFixture.i_test_1
+[       OK ] InstructionFixture.i_test_1 (2 ms)
+[ RUN      ] InstructionFixture.i_test_2
+[       OK ] InstructionFixture.i_test_2 (1 ms)
+[ RUN      ] InstructionFixture.i_test_3
+[       OK ] InstructionFixture.i_test_3 (3 ms)
+[ RUN      ] InstructionFixture.i_test_4
+[       OK ] InstructionFixture.i_test_4 (4 ms)
+[----------] 4 tests from InstructionFixture (12 ms total)
+
+[----------] 4 tests from CreatureFixture
+[ RUN      ] CreatureFixture.c_test_1
+[       OK ] CreatureFixture.c_test_1 (4 ms)
+[ RUN      ] CreatureFixture.c_test_2
+[       OK ] CreatureFixture.c_test_2 (4 ms)
+[ RUN      ] CreatureFixture.c_test_3
+[       OK ] CreatureFixture.c_test_3 (3 ms)
+[ RUN      ] CreatureFixture.c_test_4
+[       OK ] CreatureFixture.c_test_4 (10 ms)
+[----------] 4 tests from CreatureFixture (21 ms total)
+
+[----------] Global test environment tear-down
+[==========] 20 tests from 4 test cases ran. (303 ms total)
+[  PASSED  ] 20 tests.
+==30== 
+==30== HEAP SUMMARY:
+==30==     in use at exit: 72,704 bytes in 1 blocks
+==30==   total heap usage: 521 allocs, 520 frees, 473,001 bytes allocated
+==30== 
+==30== LEAK SUMMARY:
+==30==    definitely lost: 0 bytes in 0 blocks
+==30==    indirectly lost: 0 bytes in 0 blocks
+==30==      possibly lost: 0 bytes in 0 blocks
+==30==    still reachable: 72,704 bytes in 1 blocks
+==30==         suppressed: 0 bytes in 0 blocks
+==30== Rerun with --leak-check=full to see details of leaked memory
+==30== 
+==30== For counts of detected and suppressed errors, rerun with: -v
+==30== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Darwin.c++'
+Lines executed:26.38% of 235
+Branches executed:29.88% of 251
+Taken at least once:16.33% of 251
+Calls executed:23.04% of 230
+Creating 'Darwin.c++.gcov'
